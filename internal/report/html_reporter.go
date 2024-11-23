@@ -21,6 +21,6 @@ func NewHTMLReporter() *HTMLReporter {
 //
 // Retorna:
 //   - Un error si ocurre algún problema durante la generación del informe.
-func (h *HTMLReporter) Generate(results []analyzer.AnalysisResult, outputDir string) error {
+func (h *HTMLReporter) Generate(results *analyzer.AnalysisResult, outputDir string) error {
 	return nil
 }
