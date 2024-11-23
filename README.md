@@ -65,10 +65,29 @@ Asegúrate de configurar las siguientes variables de entorno:
 
 ## Uso
 
-Ejecuta la herramienta proporcionando el dominio de la empresa que deseas analizar:
+Puedes compilar y ejecutar la aplicación utilizando el `Makefile`:
 
 ```bash
-go run main.go -domain ejemplo.com
+# Instalar dependencias
+make install
+
+# Compilar la aplicación
+make build
+
+# Ejecutar la aplicación con argumentos
+make run ARGS="-domain ejemplo.com"
+
+# Limpiar archivos binarios
+make clean
+
+# Ejecutar pruebas unitarias
+make test
+
+# Ejecutar linter
+make lint
+
+# Formatear el código
+make fmt
 ```
 
 ### Parámetros Opcionales
