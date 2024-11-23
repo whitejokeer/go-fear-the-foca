@@ -12,6 +12,7 @@ install:
 	@echo "Instalando dependencias..."
 	@go mod download
 	@go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+	@sudo apt install exiftool
 
 dev:
 	@echo "Instalando dependencias de desarrollo..."
